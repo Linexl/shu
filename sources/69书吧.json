@@ -1,0 +1,28 @@
+{
+    "name": "69书吧",
+    "url": "www.69shuba.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.69shuba.com/modules/article/search.php@post->searchkey=${key}&submit=Search",
+		"charset": "utf-8",
+        "list": ".newbox li",
+        "name": ".newnav > h3:nth-child(2)",
+        "author": ".hottext",
+        "cover": "a",
+        "detail": ".newnav > h3:nth-child(2)"
+    },
+    "detail": {
+        "name": ".booknav2 > h1",
+        "catalog": ".more-btn"
+    },
+    "catalog": {
+        "list": ".catalog > ul",
+        "orderBy": 0,
+        "name": "li",
+        "chapter": "li > a"
+    },
+    "chapter": {
+        "content": ".txtnav",
+        "filter": ".hide720"
+    }
+}
