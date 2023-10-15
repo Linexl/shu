@@ -36,7 +36,7 @@ category: $('[property=og:novel:category]').attr('content'),
 words: $('div.booknav2 > p:nth-child(4)').text().replace(/字.+/, ""),
 update: $('[property=og:novel:update_time]').attr('content'),
 lastChapter: $('[property=og:novel:latest_chapter_name]').attr('content'),
-catalog: `https://www.69shu.com${$("a.more-btn").attr("href")}`
+catalog: `https://www.69shuba.com${$("a.more-btn").attr("href")}`
 }
 return JSON.stringify(book)
 }
