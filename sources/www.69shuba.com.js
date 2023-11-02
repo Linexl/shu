@@ -30,13 +30,13 @@ const detail = (url) => {
 let response = GET(url)
 let $ = HTML.parse(response)
 let book = {
-summary: $('[property=og:description]').attr('content'),
-status: $('[property=og:novel:status]').attr('content'),
-category: $('[property=og:novel:category]').attr('content'),
-words: $('div.booknav2 > p:nth-child(4)').text().replace(/字.+/, ""),
-update: $('[property=og:novel:update_time]').attr('content'),
-lastChapter: $('[property=og:novel:latest_chapter_name]').attr('content'),
-catalog: `https://www.69shuba.com${$("a.more-btn").attr("href")}`
+    summary: $('.navtxt > p:nth-child(1)').text(),
+    status: $('div.booknav2 > p:nth-child(4)').text().replace(/.+ | /, ""),
+    category: $('div.booknav2 > p:nth-child(3) > a').text(),
+    words: $('div.booknav2 > p:nth-child(4)').text().replace(/字.+/, ""),
+    update: $('div.booknav2 > p:nth-child(5)').text().replace(/更新：/, ""),
+    lastChapter: $('.qustime > ul > li:nth-child(1) > a > span').text(),
+    catalog: $("a.more-btn").attr("href")
 }
 return JSON.stringify(book)
 }
