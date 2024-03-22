@@ -4,7 +4,7 @@
 * @returns {[{name, author, cover, detail}]}
 */
 const search = (key) => {
-let response = POST("https://www.69shuba.com/modules/article/search.php", {
+let response = POST("https://www.69shu.pro/modules/article/search.php", {
 data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
@@ -73,6 +73,6 @@ return $(".txtnav").remove("div,h1")
 
 var bookSource = JSON.stringify({
 name: "69书吧--",
-url: "www.69shuba.com",
+url: "www.69shu.pro",
 version: 100
 })
