@@ -57,7 +57,7 @@ name: $("a").text(),
 url: $("a").attr("href")
 })
 })
-return JSON.stringify(array)
+return JSON.stringify(array.reverse())
 }
 
 /**
