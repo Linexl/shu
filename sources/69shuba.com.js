@@ -73,6 +73,6 @@ return $(".txtnav").remove("div,h1")
 
 var bookSource = JSON.stringify({
 name: "69书吧-69shuba.com",
-url: "69shuba.cx",
+url: "69shuba.com",
 version: 100
 })
