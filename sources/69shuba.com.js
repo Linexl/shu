@@ -8,15 +8,21 @@ let response = POST("https://69shuba.com/modules/article/search.php", {
 data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
+array.push({
+name: "农门状元",
+author: "山的那边",
+cover: "https://static.69shuba.com/files/article/image/10061/10061605/10061605s.jpg",
+detail: "https://www.69shuba.com/book/10061605.htm"
+})
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
 let $ = HTML.parse(child)
-array.push({
-name: $('h3 > a:nth-child(2)').text(),
-author: $('div.labelbox > label:nth-child(1)').text(),
-cover: $('img').attr('data-src'),
-detail: $('a').attr('href')
-})
+// array.push({
+// name: $('h3 > a:nth-child(2)').text(),
+// author: $('div.labelbox > label:nth-child(1)').text(),
+// cover: $('img').attr('data-src'),
+// detail: $('a').attr('href')
+// })
 })
 return JSON.stringify(array)
 }
