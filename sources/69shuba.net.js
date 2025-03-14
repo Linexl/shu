@@ -74,16 +74,6 @@ return JSON.stringify(array)
 const chapter = (url) => {
 let response = GET(url).replace("(本章完)","")
 let $ = HTML.parse(response)
-$("p.cp").forEach((p) => {
-  // 获取原始段落内容
-  const content = $(p).html();
-  
-  // 构建新内容（注意要解码HTML实体）
-  const newContent = '<br/>&emsp;&emsp;' + content + '<br/>';
-  
-  // 替换原始段落
-  $(p).replaceWith(newContent);
-});
 return $(".content").remove("div,h1")
 }
 
