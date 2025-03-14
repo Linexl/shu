@@ -63,7 +63,7 @@ name: $("a").text(),
 url: "https://www.69yuedu.net/r"+$("a").attr("href")
 })
 })
-return JSON.stringify(array.reverse())
+return JSON.stringify(array)
 }
 
 /**
@@ -74,15 +74,15 @@ return JSON.stringify(array.reverse())
 const chapter = (url) => {
 let response = GET(url).replace("(本章完)","")
 let $ = HTML.parse(response)
-$("p.cp").each(function() {
+$("p.cp").forEach((p) => {
   // 获取原始段落内容
-  const content = $(this).html();
+  const content = $(p).html();
   
   // 构建新内容（注意要解码HTML实体）
   const newContent = '<br/>&emsp;&emsp;' + content + '<br/>';
   
   // 替换原始段落
-  $(this).replaceWith(newContent);
+  $(p).replaceWith(newContent);
 });
 return $(".content").remove("div,h1")
 }
@@ -90,5 +90,5 @@ return $(".content").remove("div,h1")
 var bookSource = JSON.stringify({
 name: "69书吧-69shuba.net",
 url: "69shuba.net",
-version: 100
+version: 200
 })
