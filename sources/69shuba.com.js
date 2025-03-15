@@ -9,10 +9,10 @@ data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
 array.push({
-name: "农门状元",
-author: "山的那边",
-cover: "https://static.69shuba.com/files/article/image/10061/10061605/10061605s.jpg",
-detail: "https://www.69shuba.com/book/10061605.htm"
+name: "志怪书",
+author: "金色茉莉花",
+cover: "https://static.69shuba.com/files/article/image/76/76917/76917s.jpg",
+detail: "https://www.69shuba.com/book/76917.htm"
 })
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
@@ -78,7 +78,7 @@ return $(".txtnav").remove("div,h1")
 }
 
 var bookSource = JSON.stringify({
-name: "69书吧-69shuba.com",
+name: "69书吧-69shuba.com-志怪书",
 url: "69shuba.com",
 version: 100
 })
