@@ -9,10 +9,10 @@ data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
 array.push({
-name: "志怪书",
-author: "金色茉莉花",
-cover: "https://static.69shuba.com/files/article/image/76/76917/76917s.jpg",
-detail: "https://www.69shuba.com/book/76917.htm"
+name: "足球：才16岁，让我退役复出？",
+author: "懒惰的咕噜大王",
+cover: "https://bookcover.yuewen.com/qdbimg/349573/1042436604/600.webp",
+detail: "https://www.69shuba.com/book/85428.htm"
 })
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
@@ -78,7 +78,7 @@ return $(".txtnav").remove("div,h1")
 }
 
 var bookSource = JSON.stringify({
-name: "69书吧-69shuba.com-志怪书",
+name: "69书吧-69shuba.com-足球",
 url: "69shuba.com",
 version: 100
 })
