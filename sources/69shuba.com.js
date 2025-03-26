@@ -9,10 +9,10 @@ data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
 array.push({
-name: "星空职业者",
-author: "文抄公",
-cover: "https://static.69shuba.com/files/article/image/58/58911/58911s.jpg",
-detail: "https://www.69shuba.com/book/58911.htm"
+name: "CS：才16岁，让我老登逆袭？",
+author: "地精咖啡",
+cover: "https://static.69shuba.com/files/article/image/83/83151/83151s.jpg",
+detail: "https://www.69shuba.com/book/83151.htm"
 })
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
