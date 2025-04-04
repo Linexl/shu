@@ -9,10 +9,10 @@ data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
 array.push({
-name: "CS：才16岁，让我老登逆袭？",
-author: "地精咖啡",
-cover: "https://static.69shuba.com/files/article/image/83/83151/83151s.jpg",
-detail: "https://www.69shuba.com/book/83151.htm"
+name: "苟在女魔头身边偷偷修炼",
+author: "怕辣的红椒",
+cover: "https://static.69shuba.com/files/article/image/51/51618/51618s.jpg",
+detail: "https://www.69shuba.com/book/51618.htm"
 })
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
@@ -78,7 +78,7 @@ return $(".txtnav").remove("div,h1")
 }
 
 var bookSource = JSON.stringify({
-name: "69书吧-69shuba.com-cs",
+name: "69书吧-69shuba.com-女魔头",
 url: "69shuba.com",
 version: 100
 })
