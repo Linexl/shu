@@ -9,10 +9,10 @@ data: `searchkey=${ENCODE(key,"gbk")}&submit=Search`
 })
 let array = []
 array.push({
-name: "北宋穿越指南",
+name: "重启人生",
 author: "王梓钧",
-cover: "https://static.69shuba.com/files/article/image/46/46913/46913s.jpg",
-detail: "https://www.69shuba.com/book/46913.htm"
+cover: "https://static.69shuba.com/files/article/image/89/89420/89420s.jpg",
+detail: "https://www.69shuba.com/book/89420.htm"
 })
 let $ = HTML.parse(response)
 $('div.newbox > ul > li').forEach((child) => {
@@ -78,7 +78,7 @@ return $(".txtnav").remove("div,h1")
 }
 
 var bookSource = JSON.stringify({
-name: "69书吧-69shuba.com-北宋穿越指南",
+name: "69书吧-69shuba.com-重启人生",
 url: "69shuba.com",
 version: 100
 })
