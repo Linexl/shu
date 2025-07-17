@@ -73,13 +73,13 @@ return JSON.stringify(array.reverse())
 */
 const chapter = (url) => {
 let response = GET(url).replace("(本章完)","")
+return url
 let $ = HTML.parse(response)
-return $
 return $(".txtnav").remove("div,h1")
 }
 
 var bookSource = JSON.stringify({
-name: "69书吧-69shuba.com-谍战生存指南1",
+name: "69书吧-69shuba.com-谍战生存指南2",
 url: "69shuba.com",
 version: 100
 })
